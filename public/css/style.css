@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbarTogglerDemo02{
+    justify-content: flex-end;
+}
+a{
+    font-family: 'Yatra One', cursive;
+}
+.many{
+    margin: 20px 0;
+}
+
+.row{
+    font-family: 'Yatra One', cursive;
+}
+.footer{
+    text-align: center;
+    font-family: 'Yatra One', cursive; 
+}
+.container-many{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.texts{
+    padding: 120px;
+}
+button{
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.button{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 6px -6px #000;
+    margin-bottom: 20px;
+}
+.button:hover{
+    box-shadow: 0 8px 6px -6px #0d6efd;
+}
+i{
+    color: #7ca7e7;
+    transition:all linear;
+    animation:rot 2s linear infinite;
+}
+.location{
+    z-index: 1;
+    
+}
+#city_name{
+    font-size: 30px;
+}
+#cityName{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px ;
+    box-shadow: 0 8px 6px -6px #000;
+}
+#cityName:hover{
+    box-shadow: 0 8px 6px -6px #0d6efd;
+}
+.containers{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yatra One', cursive;
+    font-weight: 300;
+    font-size: larger;
+}
+.temp_form{
+    display: flex;
+}
+
+#submitBtn{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow:0 8px 6px -6px #000 ;
+}
+#submitBtn:hover{
+    box-shadow: 0 8px 6px -6px #0d6efd;
+}
+.top_layer{
+    padding: 10px;
+    display: flex;
+    margin: 10px 0; 
+    justify-content: space-between;
+    /* background-color: rgb(3, 3, 40); */
+}
+.tempInformation{
+
+    border-radius: 10px;
+    background-image:radial-gradient( rgba(6, 217, 254, 0.306),#7ca7e7),url(/images/bg6.avif);
+ 
+    margin-top: 100px ;
+    width: 30%;
+}
+.main-layer{
+    background-size: cover;
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* background-color: rgb(17, 17, 57); */
+}
+#temp_status i{
+    color: rgb(254, 254, 254);
+}
+.middle_layer_data_hide{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+   
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .tempInformation{
+        width: 70%;
+    }
+    .main-layer{
+        font-size: larger;
+    }
+    #city_name{
+        font-size: 20px;
+    }
+}
